@@ -29,10 +29,7 @@
                       <a href="#features" class="text-gray-800 hover:text-blue-500 border-b-2 border-transparent hover:border-blue-500 pb-2 transition duration-300">Features</a>
                   </li>
                   <li>
-                      <a href="#request-demo" class="text-gray-800 hover:text-blue-500 border-b-2 border-transparent hover:border-blue-500 pb-2 transition duration-300">Demo</a>
-                  </li>
-                  <li>
-                      <a href="#contact" class="text-gray-800 hover:text-blue-500 border-b-2 border-transparent hover:border-blue-500 pb-2 transition duration-300">Contact</a>
+                      <a href="#pricing" class="text-gray-800 hover:text-blue-500 border-b-2 border-transparent hover:border-blue-500 pb-2 transition duration-300">Pricing</a>
                   </li>
               </ul>
           </nav>
@@ -47,19 +44,21 @@
         affordable cost ⤷ delivered fast
     </p>
     <div class="mt-16">
-      <a href="#features" class="bg-blue-500 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-600">
-        More Details
+      <a href="#features">
+          <button id="exploreBtn" class="mx-auto lg:mx-0 bg-white text-2xl text-blue-500 font-bold rounded-full my-6 py-3 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out border-2 border-transparent hover:border-blue-500">
+              Learn More
+          </button>
       </a>
     </div>
   </section>
 
   <!-- Features Section -->
-  <section id="features" class="py-16 px-6 bg-gray-50">
+  <section id="features" class="py-16 px-6 bg-gray-50 bg-gradient-to-br from-cyan-100 to-fuchsia-200">
       <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">We Guarantee to Our Buyers</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:mx-20 lg:mx-40">
           <!-- Feature 1 -->
           <div class="bg-white shadow-lg rounded-lg px-6 py-12 flex items-center space-x-6 hover:shadow-xl transition-transform transform hover:scale-105">
-              <div class="text-blue-500">
+              <div class="text-blue-500 hidden md:inline-block">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 md:h-12 md:w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                   </svg>
@@ -76,7 +75,7 @@
 
           <!-- Feature 2 -->
           <div class="bg-white shadow-lg rounded-lg px-6 py-12 flex items-center space-x-6 hover:shadow-xl transition-transform transform hover:scale-105">
-              <div class="text-blue-500">
+              <div class="text-blue-500 hidden md:inline-block">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 md:h-12 md:w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                   </svg>
@@ -93,7 +92,7 @@
 
           <!-- Feature 3 -->
           <div class="bg-white shadow-lg rounded-lg px-6 py-12 flex items-center space-x-6 hover:shadow-xl transition-transform transform hover:scale-105">
-              <div class="text-blue-500">
+              <div class="text-blue-500 hidden md:inline-block">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 md:h-12 md:w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                   </svg>
@@ -110,7 +109,7 @@
 
           <!-- Feature 4 -->
           <div class="bg-white shadow-lg rounded-lg px-6 py-12 flex items-center space-x-6 hover:shadow-xl transition-transform transform hover:scale-105">
-              <div class="text-blue-500">
+              <div class="text-blue-500 hidden md:inline-block">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 md:h-12 md:w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                   </svg>
@@ -127,7 +126,7 @@
 
           <!-- Feature 5 -->
           <div class="bg-white shadow-lg rounded-lg px-6 py-12 flex items-center space-x-6 hover:shadow-xl transition-transform transform hover:scale-105">
-              <div class="text-blue-500">
+              <div class="text-blue-500 hidden md:inline-block">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 md:h-12 md:w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                   </svg>
@@ -144,7 +143,7 @@
 
           <!-- Feature 6 -->
           <div class="bg-white shadow-lg rounded-lg px-6 py-12 flex items-center space-x-6 hover:shadow-xl transition-transform transform hover:scale-105">
-              <div class="text-blue-500">
+              <div class="text-blue-500 hidden md:inline-block">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 md:h-12 md:w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                   </svg>
@@ -159,27 +158,104 @@
               </div>
           </div>
 
+
           <!-- CTA Button -->
-          <div class="flex justify-center md:col-span-2 mt-6">
-              <a href="#request-demo" class="bg-blue-500 text-white px-8 py-3 rounded-lg shadow-md hover:bg-blue-600 transition">
-                  View Demo
-              </a>
+          <!--<div class="flex justify-center md:col-span-2 mt-6">-->
+              <!--<a href="#request-demo" class="bg-blue-500 text-white px-8 py-3 rounded-lg shadow-md hover:bg-blue-600 transition">-->
+                  <!--Place Order-->
+              <!--</a>-->
+          <!--</div>-->
+      </div>
+
+      <div class="m-0 md:m-64 mt-8 md:-translate-y-32">
+          <h2 class="text-2xl md:text-4xl font-bold text-gray-800 my-4 text-center">Let's Visualize</h2>
+          <div class="flex justify-center">
+              <iframe
+                      style="aspect-ratio: 16 / 9; width: 100% !important;"
+                      src="https://www.youtube.com/embed/h9tTK0LbXfE"
+                      title="YouTube video player" frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen>
+              </iframe>
           </div>
       </div>
+
   </section>
 
 
 
-  <!-- Portfolio Section -->
-  <section id="portfolio" class="py-16 bg-gray-50 px-6">
-    <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">Our Portfolio</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <div class="rounded-lg shadow-lg overflow-hidden">
+  <!-- Pricing Section -->
+  <section id="pricing" class="py-16 bg-gradient-to-br from-blue-100 via-fuchsia-100 to-cyan-100 px-6 md:-translate-y-60">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">Pricing</h2>
+      <div class="text-center text-gray-600 -mt-8 mb-8">Showing number of article per month</div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:mx-20 lg:mx-40">
+
+          <!-- Tier 1: 1-10 Articles -->
+          <div class="bg-white shadow-lg rounded-lg p-8 text-center hover:shadow-xl transition-transform transform hover:scale-105">
+              <h3 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">1-10 Articles</h3>
+              <p class="text-gray-600 mb-4">
+                  <span class="text-4xl font-bold text-blue-500">$14</span> per article
+              </p>
+              <ul class="space-y-2 text-gray-600">
+                  <li>+ SEO: $4</li>
+                  <li>+ Featured Image: $2</li>
+                  <li>+ Meta Data: $1</li>
+              </ul>
+              <p class="mt-6 font-semibold text-blue-500">Regular Price</p>
+          </div>
+
+          <!-- Tier 2: 11-20 Articles -->
+          <div class="bg-white shadow-lg rounded-lg p-8 text-center hover:shadow-xl transition-transform transform hover:scale-105">
+              <h3 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">11-20 Articles</h3>
+              <p class="text-gray-600 mb-4">
+                  <span class="text-4xl font-bold text-fuchsia-500">$12.60</span> per article
+              </p>
+              <ul class="space-y-2 text-gray-600">
+                  <li>+ SEO: $3.60</li>
+                  <li>+ Featured Image: $1.80</li>
+                  <li>+ Meta Data: $0.90</li>
+              </ul>
+              <p class="mt-6 font-semibold text-fuchsia-500">10% Discount</p>
+          </div>
+
+          <!-- Tier 3: 21-40 Articles -->
+          <div class="bg-white shadow-lg rounded-lg p-8 text-center hover:shadow-xl transition-transform transform hover:scale-105">
+              <h3 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">21-40 Articles</h3>
+              <p class="text-gray-600 mb-4">
+                  <span class="text-4xl font-bold text-cyan-500">$9.80</span> per article
+              </p>
+              <ul class="space-y-2 text-gray-600">
+                  <li>+ SEO: $2.80</li>
+                  <li>+ Featured Image: $1.40</li>
+                  <li>+ Meta Data: $0.70</li>
+              </ul>
+              <p class="mt-6 font-semibold text-cyan-500">30% Discount</p>
+          </div>
+
+          <!-- Tier 4: 40+ Articles -->
+          <div class="bg-white shadow-lg rounded-lg p-8 text-center hover:shadow-xl transition-transform transform hover:scale-105">
+              <h3 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">40+ Articles</h3>
+              <p class="text-gray-600 mb-4">
+                  <span class="text-4xl font-bold text-green-500">$7.00</span> per article
+              </p>
+              <ul class="space-y-2 text-gray-600">
+                  <li>+ SEO: $2.00</li>
+                  <li>+ Featured Image: $1.00</li>
+                  <li>+ Meta Data: $0.50</li>
+              </ul>
+              <p class="mt-6 font-semibold text-green-500">50% Discount</p>
+          </div>
 
       </div>
-      <!-- Repeat portfolio item as needed -->
-    </div>
   </section>
+
+  <section id="contact" class="md:-mt-60">
+      <div>
+
+      </div>
+  </section>
+
 
   <!-- Footer -->
   <footer class="py-8 bg-blue-500 text-white text-center">
