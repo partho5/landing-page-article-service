@@ -42,7 +42,7 @@
   <section class="min-h-screen flex flex-col justify-center items-center text-center px-6">
     <h1 class="text-4xl md:text-6xl font-bold">SEO-Optimized Articles</h1>
     <p class="text-lg md:text-xl text-gray-600 my-8">
-        affordable cost ⤷ delivered fast
+        affordable cost ↝ delivered fast
     </p>
     <div class="mt-16">
       <a href="#features" class="scrollable">
@@ -184,9 +184,9 @@
 
 
   <!-- Pricing Section -->
-  <section id="pricing" class="py-16 bg-gradient-to-br from-blue-100 via-fuchsia-100 to-cyan-100 px-6 md:-translate-y-60">
+  <section id="pricing" class="py-16 bg-gradient-to-br from-blue-100 via-fuchsia-100 to-cyan-100 px-6 md:-translate-y-52">
       <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">
-          <span class="brand-name" data-brand>Quily</span> Pricing
+          <span class="brand-name" data-brand>Quily</span> 🏷 Pricing
       </h2>
       <div class="text-center text-gray-600 -mt-8 mb-8">Showing number of articles per month</div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:mx-20 lg:mx-40">
@@ -250,21 +250,71 @@
       </div>
   </section>
 
-  <section id="contact" class="md:-mt-60">
+  <section id="contact" class="md:-mt-60 px-4">
       <div class="my-12">
           <div class="text-center text-black text-2xl">So? Can we start now?</div>
-          <!--CTA Button-->
-          <div class="flex justify-center md:col-span-2 mt-4">
-              <a href="#request-demo" class="bg-black text-white px-8 py-3 rounded-lg shadow-md hover:bg-blue-600 transition">
+
+          <!-- CTA Button -->
+          <div class="flex justify-center mt-4">
+              <a href="#" id="placeOrderBtn" class="bg-black text-white px-8 py-3 rounded-lg shadow-md hover:bg-blue-600 transition">
                   Place Order
               </a>
           </div>
-          <div class="text-center mt-12">
-              Need any <a href="support.html" class="text-blue-500 hover:underline">Support</a> ?
-              We will love to answer your query.
+
+          <!-- Order Form -->
+          <div id="orderForm" style="display: none;" class="mt-2 mx-auto bg-white shadow-lg rounded-lg p-6 md:p-12 max-w-2xl">
+              <h2 class="text-xl font-bold text-gray-800 text-center mb-6">Order Details</h2>
+              <form id="orderDetailsForm" class="space-y-4">
+                  <div>
+                      <label for="niche" class="block text-gray-700 font-medium">Niche of Articles:</label>
+                      <input type="text" id="niche" required placeholder="e.g. Technology / Mental Health" class="border-gray-300 border rounded-lg p-3 w-full focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                  </div>
+
+                  <div>
+                      <label for="numberOfArticles" class="block text-gray-700 font-medium">Number of Articles Needed per Month:</label>
+                      <input type="number" id="numberOfArticles" required placeholder="e.g. 20" class="border-gray-300 border rounded-lg p-3 w-full focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                  </div>
+
+                  <div>
+                      <label for="name" class="block text-gray-700 font-medium">Name:</label>
+                      <input type="text" id="name" required placeholder="Your name please" class="border-gray-300 border rounded-lg p-3 w-full focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                  </div>
+
+                  <div>
+                      <label for="email" class="block text-gray-700 font-medium">Email:</label>
+                      <input type="email" id="email" required placeholder="We will contact you using this email" class="border-gray-300 border rounded-lg p-3 w-full focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                  </div>
+
+                  <div>
+                      <label for="additionalNote" class="block text-gray-700 font-medium">Additional Notes: (<small>optional</small>) </label>
+                      <textarea id="additionalNote" rows="4" placeholder="Any additional information..." class="border-gray-300 border rounded-lg p-3 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                  </div>
+
+                  <div class="text-center">
+                      <button
+                              type="button"
+                              id="confirmOrderBtn"
+                              class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition relative">
+                          <span class="button-text">Confirm Order</span>
+                          <span class="loader hidden absolute inset-0 flex items-center justify-center">
+                              <svg class="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
+                              </svg>
+                          </span>
+                      </button>
+                  </div>
+
+              </form>
           </div>
+
+          <div class="text-center mt-12">
+              Need any <a href="support.html" class="text-blue-500 hover:underline">Support</a>? We will love to answer your query.
+          </div>
+
       </div>
   </section>
+
 
 
   <!-- Footer -->
@@ -350,11 +400,96 @@
       document.addEventListener('DOMContentLoaded', () => {
           // Set a timeout to change the src after 2 seconds
           setTimeout(() => {
-          const iframe = document.getElementById('youtubeIframe');
-          iframe.src = "https://www.youtube.com/embed/h9tTK0LbXfE"; // Set the actual src
-      }, 2000); // 2000 milliseconds = 2 seconds
+              const iframe = document.getElementById('youtubeIframe');
+              iframe.src = "https://www.youtube.com/embed/h9tTK0LbXfE"; // Set the actual src
+          }, 2000); // 2000 milliseconds = 2 seconds
       });
   </script>
+
+
+<script>
+    /* handle place order */
+
+    // Select the Place Order button and the Order Form
+    const placeOrderBtn = document.getElementById('placeOrderBtn');
+    const orderForm = document.getElementById('orderForm');
+    const confirmOrderBtn = document.getElementById('confirmOrderBtn');
+
+    // Show the order form when the Place Order button is clicked
+    placeOrderBtn.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the default anchor behavior
+        orderForm.style.display = 'block'; // Show the form
+        placeOrderBtn.style.display = 'none'; // hide place order button
+    });
+
+    // Handle the Confirm Order button click
+    confirmOrderBtn.addEventListener('click', function () {
+        // Gather form input values
+        const niche = document.getElementById('niche').value;
+        const numberOfArticles = document.getElementById('numberOfArticles').value;
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const additionalNote = document.getElementById('additionalNote').value;
+
+        // Check for missing fields
+        if (!niche || !numberOfArticles || !name || !email) {
+            alert('Please fill in all fields before proceeding.');
+            return;
+        }
+
+        // Disable the button and show loader
+        const button = this;
+        const loader = button.querySelector('.loader');
+        const buttonText = button.querySelector('.button-text');
+
+        button.disabled = true;
+        button.classList.add('opacity-50', 'cursor-not-allowed');
+        loader.classList.remove('hidden');
+        buttonText.classList.add('hidden');
+
+        // Prepare the data to send
+        const data = {
+            subject: `Order for ${niche} articles`,
+            msg: `I would like to order ${numberOfArticles} articles per month. Additional notes: ${additionalNote}`,
+            name: name,
+            email: email,
+            simpleAuth: "SIMPLE_J9K4", // Auth key
+        };
+
+        // Make an API request using fetch
+        fetch('https://datamatric.com/api/contact-us-send-msg', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+        })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`Network response was not ok: ${response.statusText}`);
+                }
+                return response.text();
+            })
+            .then(data => {
+                // Handle success
+                alert('Order placed successfully!');
+                console.log(data);
+            })
+            .catch(error => {
+                // Handle error
+                alert("Server couldn't process the request: " + error.message);
+                console.error('Error:', error);
+            })
+            .finally(() => {
+                // Re-enable the button and hide the loader
+                button.disabled = false;
+                button.classList.remove('opacity-50', 'cursor-not-allowed');
+                loader.classList.add('hidden');
+                buttonText.classList.remove('hidden');
+            });
+    });
+;
+</script>
 
 </body>
 </html>
