@@ -3,21 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quily Writing Service</title>
+  <title>Quily - Article Writing Service</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="stylesheet" href="css/index.css">
 </head>
 <body class="bg-gradient-to-b from-blue-50 to-white text-gray-800">
 
   <!-- Header -->
-  <header class="bg-blue-50 text-black py-1">
+  <header class="fixed z-30 w-full opacity-95 bg-blue-50 text-black py-1">
       <div class="w-full mx-auto flex justify-between items-center px-4 pb-2 shadow-sm">
           <div class="text-3xl font-bold">
               <a href="/" class="flex items-center">
                   <img src="images/logo.png" alt="Mindila Logo" class="logo w-10 h-10 mr-2 rounded-full border-transparent">
                   <div>
                       <span class="brand-name">
-                          <span class="brand-part1">Quily</span>
+                          <span class="brand-part1" data-brand>Quily</span>
                       </span>
                       <span class="brand-msg ml-1 text-lg font-normal text-blue-600 hidden md:inline-block -translate-y-1">Article Writing Service</span>
                   </div>
@@ -26,10 +27,10 @@
           <nav>
               <ul class="flex space-x-3 md:space-x-8 md:mr-16">
                   <li>
-                      <a href="#features" class="text-gray-800 hover:text-blue-500 border-b-2 border-transparent hover:border-blue-500 pb-2 transition duration-300">Features</a>
+                      <a href="#features" class="scrollable text-gray-800 hover:text-blue-500 border-b-2 border-transparent hover:border-blue-500 pb-2 transition duration-300">Features</a>
                   </li>
                   <li>
-                      <a href="#pricing" class="text-gray-800 hover:text-blue-500 border-b-2 border-transparent hover:border-blue-500 pb-2 transition duration-300">Pricing</a>
+                      <a href="#pricing" class="scrollable text-gray-800 hover:text-blue-500 border-b-2 border-transparent hover:border-blue-500 pb-2 transition duration-300">Pricing</a>
                   </li>
               </ul>
           </nav>
@@ -44,8 +45,8 @@
         affordable cost ⤷ delivered fast
     </p>
     <div class="mt-16">
-      <a href="#features">
-          <button id="exploreBtn" class="mx-auto lg:mx-0 bg-white text-2xl text-blue-500 font-bold rounded-full my-6 py-3 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out border-2 border-transparent hover:border-blue-500">
+      <a href="#features" class="scrollable">
+          <button id="exploreBtn" class="mx-auto lg:mx-0 bg-white text-2xl text-blue-500 font-bold rounded-full my-6 py-3 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover-scale-102 duration-300 ease-in-out border-2 border-transparent hover:border-blue-500">
               Learn More
           </button>
       </a>
@@ -53,11 +54,13 @@
   </section>
 
   <!-- Features Section -->
-  <section id="features" class="py-16 px-6 bg-gray-50 bg-gradient-to-br from-cyan-100 to-fuchsia-200">
-      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">We Guarantee to Our Buyers</h2>
+  <section id="features" class="py-16 px-6 bg-gray-50 bg-gradient-to-br from-amber-50 via-indigo-50 to-fuchsia-200">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">
+          What is Guaranteed by <span class="brand-name" data-brand>Quily</span>
+      </h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:mx-20 lg:mx-40">
           <!-- Feature 1 -->
-          <div class="bg-white shadow-lg rounded-lg px-6 py-12 flex items-center space-x-6 hover:shadow-xl transition-transform transform hover:scale-105">
+          <div class="bg-white shadow-lg rounded-lg px-6 py-12 flex items-center space-x-6 hover:shadow-xl transition-transform transform hover-scale-102">
               <div class="text-blue-500 hidden md:inline-block">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 md:h-12 md:w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
@@ -74,7 +77,7 @@
           </div>
 
           <!-- Feature 2 -->
-          <div class="bg-white shadow-lg rounded-lg px-6 py-12 flex items-center space-x-6 hover:shadow-xl transition-transform transform hover:scale-105">
+          <div class="bg-white shadow-lg rounded-lg px-6 py-12 flex items-center space-x-6 hover:shadow-xl transition-transform transform hover-scale-102">
               <div class="text-blue-500 hidden md:inline-block">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 md:h-12 md:w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
@@ -91,7 +94,7 @@
           </div>
 
           <!-- Feature 3 -->
-          <div class="bg-white shadow-lg rounded-lg px-6 py-12 flex items-center space-x-6 hover:shadow-xl transition-transform transform hover:scale-105">
+          <div class="bg-white shadow-lg rounded-lg px-6 py-12 flex items-center space-x-6 hover:shadow-xl transition-transform transform hover-scale-102">
               <div class="text-blue-500 hidden md:inline-block">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 md:h-12 md:w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
@@ -108,7 +111,7 @@
           </div>
 
           <!-- Feature 4 -->
-          <div class="bg-white shadow-lg rounded-lg px-6 py-12 flex items-center space-x-6 hover:shadow-xl transition-transform transform hover:scale-105">
+          <div class="bg-white shadow-lg rounded-lg px-6 py-12 flex items-center space-x-6 hover:shadow-xl transition-transform transform hover-scale-102">
               <div class="text-blue-500 hidden md:inline-block">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 md:h-12 md:w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
@@ -125,7 +128,7 @@
           </div>
 
           <!-- Feature 5 -->
-          <div class="bg-white shadow-lg rounded-lg px-6 py-12 flex items-center space-x-6 hover:shadow-xl transition-transform transform hover:scale-105">
+          <div class="bg-white shadow-lg rounded-lg px-6 py-12 flex items-center space-x-6 hover:shadow-xl transition-transform transform hover-scale-102">
               <div class="text-blue-500 hidden md:inline-block">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 md:h-12 md:w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
@@ -142,7 +145,7 @@
           </div>
 
           <!-- Feature 6 -->
-          <div class="bg-white shadow-lg rounded-lg px-6 py-12 flex items-center space-x-6 hover:shadow-xl transition-transform transform hover:scale-105">
+          <div class="bg-white shadow-lg rounded-lg px-6 py-12 flex items-center space-x-6 hover:shadow-xl transition-transform transform hover-scale-102">
               <div class="text-blue-500 hidden md:inline-block">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 md:h-12 md:w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
@@ -157,22 +160,17 @@
                   </p>
               </div>
           </div>
-
-
-          <!-- CTA Button -->
-          <!--<div class="flex justify-center md:col-span-2 mt-6">-->
-              <!--<a href="#request-demo" class="bg-blue-500 text-white px-8 py-3 rounded-lg shadow-md hover:bg-blue-600 transition">-->
-                  <!--Place Order-->
-              <!--</a>-->
-          <!--</div>-->
       </div>
 
       <div class="m-0 md:m-64 mt-8 md:-translate-y-32">
-          <h2 class="text-2xl md:text-4xl font-bold text-gray-800 my-4 text-center">Let's Visualize</h2>
+          <h2 class="text-2xl md:text-4xl font-bold text-gray-800 my-4 text-center">
+              Quality Ensured by <span class="brand-name" data-brand>Quily</span>
+          </h2>
           <div class="flex justify-center">
               <iframe
+                      id="youtubeIframe"
                       style="aspect-ratio: 16 / 9; width: 100% !important;"
-                      src="https://www.youtube.com/embed/h9tTK0LbXfE"
+                      src="https://www.youtube.com/embed/"
                       title="YouTube video player" frameborder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       referrerpolicy="strict-origin-when-cross-origin"
@@ -187,18 +185,20 @@
 
   <!-- Pricing Section -->
   <section id="pricing" class="py-16 bg-gradient-to-br from-blue-100 via-fuchsia-100 to-cyan-100 px-6 md:-translate-y-60">
-      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">Pricing</h2>
-      <div class="text-center text-gray-600 -mt-8 mb-8">Showing number of article per month</div>
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">
+          <span class="brand-name" data-brand>Quily</span> Pricing
+      </h2>
+      <div class="text-center text-gray-600 -mt-8 mb-8">Showing number of articles per month</div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:mx-20 lg:mx-40">
 
           <!-- Tier 1: 1-10 Articles -->
-          <div class="bg-white shadow-lg rounded-lg p-8 text-center hover:shadow-xl transition-transform transform hover:scale-105">
+          <div class="bg-white shadow-lg rounded-lg p-8 text-center hover:shadow-xl transition-transform transform hover-scale-102">
               <h3 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">1-10 Articles</h3>
               <p class="text-gray-600 mb-4">
                   <span class="text-4xl font-bold text-blue-500">$14</span> per article
               </p>
               <ul class="space-y-2 text-gray-600">
-                  <li>+ SEO: $4</li>
+                  <li>+ On-page SEO: $4</li>
                   <li>+ Featured Image: $2</li>
                   <li>+ Meta Data: $1</li>
               </ul>
@@ -206,62 +206,155 @@
           </div>
 
           <!-- Tier 2: 11-20 Articles -->
-          <div class="bg-white shadow-lg rounded-lg p-8 text-center hover:shadow-xl transition-transform transform hover:scale-105">
+          <div class="bg-white shadow-lg rounded-lg p-8 text-center hover:shadow-xl transition-transform transform hover-scale-102">
               <h3 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">11-20 Articles</h3>
               <p class="text-gray-600 mb-4">
-                  <span class="text-4xl font-bold text-fuchsia-500">$12.60</span> per article
+                  <span class="text-4xl font-bold text-fuchsia-500">$12</span> per article
               </p>
               <ul class="space-y-2 text-gray-600">
-                  <li>+ SEO: $3.60</li>
-                  <li>+ Featured Image: $1.80</li>
+                  <li>+ On-page SEO: $3.5</li>
+                  <li>+ Featured Image: $1.8</li>
                   <li>+ Meta Data: $0.90</li>
               </ul>
-              <p class="mt-6 font-semibold text-fuchsia-500">10% Discount</p>
+              <p class="mt-6 font-semibold text-fuchsia-500">13% Discount</p>
           </div>
 
           <!-- Tier 3: 21-40 Articles -->
-          <div class="bg-white shadow-lg rounded-lg p-8 text-center hover:shadow-xl transition-transform transform hover:scale-105">
+          <div class="bg-white shadow-lg rounded-lg p-8 text-center hover:shadow-xl transition-transform transform hover-scale-102">
               <h3 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">21-40 Articles</h3>
               <p class="text-gray-600 mb-4">
-                  <span class="text-4xl font-bold text-cyan-500">$9.80</span> per article
+                  <span class="text-4xl font-bold text-cyan-500">$9</span> per article
               </p>
               <ul class="space-y-2 text-gray-600">
-                  <li>+ SEO: $2.80</li>
-                  <li>+ Featured Image: $1.40</li>
-                  <li>+ Meta Data: $0.70</li>
+                  <li>+ On-page SEO: $3</li>
+                  <li>+ Featured Image: $1.4</li>
+                  <li>+ Meta Data: $0.7</li>
               </ul>
-              <p class="mt-6 font-semibold text-cyan-500">30% Discount</p>
+              <p class="mt-6 font-semibold text-cyan-500">32% Discount</p>
           </div>
 
           <!-- Tier 4: 40+ Articles -->
-          <div class="bg-white shadow-lg rounded-lg p-8 text-center hover:shadow-xl transition-transform transform hover:scale-105">
+          <div class="bg-white shadow-lg rounded-lg p-8 text-center hover:shadow-xl transition-transform transform hover-scale-102">
               <h3 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">40+ Articles</h3>
               <p class="text-gray-600 mb-4">
-                  <span class="text-4xl font-bold text-green-500">$7.00</span> per article
+                  <span class="text-4xl font-bold text-green-500">$6</span> per article
               </p>
               <ul class="space-y-2 text-gray-600">
-                  <li>+ SEO: $2.00</li>
-                  <li>+ Featured Image: $1.00</li>
-                  <li>+ Meta Data: $0.50</li>
+                  <li>+ On-page SEO: $2</li>
+                  <li>+ Featured Image: $1</li>
+                  <li>+ Meta Data: $0.5</li>
               </ul>
-              <p class="mt-6 font-semibold text-green-500">50% Discount</p>
+              <p class="mt-6 font-semibold text-green-500">54% Discount</p>
           </div>
 
       </div>
   </section>
 
   <section id="contact" class="md:-mt-60">
-      <div>
-
+      <div class="my-12">
+          <div class="text-center text-black text-2xl">So? Can we start now?</div>
+          <!--CTA Button-->
+          <div class="flex justify-center md:col-span-2 mt-4">
+              <a href="#request-demo" class="bg-black text-white px-8 py-3 rounded-lg shadow-md hover:bg-blue-600 transition">
+                  Place Order
+              </a>
+          </div>
+          <div class="text-center mt-12">
+              Need any <a href="support.html" class="text-blue-500 hover:underline">Support</a> ?
+              We will love to answer your query.
+          </div>
       </div>
   </section>
 
 
   <!-- Footer -->
-  <footer class="py-8 bg-blue-500 text-white text-center">
-      <p>Quily</p>
-    <p>&copy; 2024. All rights reserved.</p>
+  <footer class="py-8 bg-indigo-100 text-black text-center">
+      <p class="text-lg font-bold">Quily</p>
+      <p>&copy; 2024. All rights reserved.</p>
+      <div class="mt-4 flex flex-col sm:flex-row justify-center space-y-2 sm:space-y-0 sm:space-x-4">
+          <a href="privacy-policy.html" class="hover:underline">Privacy Policy</a>
+          <a href="terms-and-conditions.html" class="hover:underline">Terms & Conditions</a>
+          <a href="refund-policy.html" class="hover:underline">Refund Policy</a>
+          <a href="support.html" class="hover:underline">Support</a>
+      </div>
   </footer>
+
+
+
+
+  <script>
+      /* smooth scroll */
+      document.addEventListener('DOMContentLoaded', function() {
+          const menuLinks = document.querySelectorAll('.scrollable');
+          const exploreBtn = document.getElementById('exploreBtn');
+
+          menuLinks.forEach(function(menuLink) {
+              menuLink.addEventListener('click', function(e) {
+                  e.preventDefault();
+                  smoothScrollTo(this.getAttribute('href').substring(1));
+              });
+          });
+
+          exploreBtn.addEventListener('click', function() {
+              smoothScrollTo('solution');
+          });
+
+          function smoothScrollTo(targetId) {
+              const targetSection = document.getElementById(targetId);
+              if (targetSection) {
+                  window.scrollTo({
+                      top: targetSection.offsetTop,
+                      behavior: 'smooth'
+                  });
+              }
+          }
+
+
+      });
+  </script>
+
+
+    <script>
+        /* observer for brand name animation */
+        // Observer Callback
+        const animateBrand = (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const brandName = entry.target;
+                    brandName.classList.add('animate-brand'); // Add animation class
+
+
+                    // Listen for animation end to restore text color
+                    brandName.addEventListener('animationend', () => {
+                        brandName.classList.remove('animate-brand'); // Remove animation class
+                        brandName.style.background = 'none'; // Remove gradient background
+                        brandName.style.webkitTextFillColor = 'black'; // Restore black text
+                    }, { once: true }); // Ensure it runs only once
+
+                    observer.unobserve(brandName); // Stop observing after animation triggers
+                }
+            });
+        };
+
+        // Create Observer
+        const observer = new IntersectionObserver(animateBrand, {
+            threshold: 0.5, // Trigger when 50% of the element is visible
+        });
+
+        // Observe all brand elements
+        document.querySelectorAll('[data-brand]').forEach(brand => observer.observe(brand));
+    </script>
+
+  <script>
+      /* Load some resources after page load */
+      document.addEventListener('DOMContentLoaded', () => {
+          // Set a timeout to change the src after 2 seconds
+          setTimeout(() => {
+          const iframe = document.getElementById('youtubeIframe');
+          iframe.src = "https://www.youtube.com/embed/h9tTK0LbXfE"; // Set the actual src
+      }, 2000); // 2000 milliseconds = 2 seconds
+      });
+  </script>
 
 </body>
 </html>

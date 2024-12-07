@@ -1,0 +1,33 @@
+
+/* Keyframes for flowing color effect */
+@keyframes flowColor {
+    0% {
+        background-position: 100% 0; /* Start from the right */
+    }
+    100% {
+        background-position: 0 0; /* Move to the left */
+    }
+}
+
+/* Animation class for brand name */
+.animate-brand {
+    background: linear-gradient(90deg, #ff6b6b, #e28432, #4caf50, #2196f3, #ff6b6b); /* Gradient colors */
+    background-size: 300%; /* Increase size for smooth flow */
+    -webkit-background-clip: text; /* Clip background to text */
+    -webkit-text-fill-color: transparent; /* Make text color transparent */
+    animation: flowColor 1s linear forwards; /* Flow animation */
+    transition: color 0.3s ease; /* Smooth transition to black */
+}
+
+/* Class to restore color to black */
+.animate-brand-complete {
+    -webkit-background-clip: unset; /* Remove background clip */
+    color: black; /* Set text color to black */
+}
+
+
+/* Custom scale-102 class */
+.hover-scale-102:hover {
+    transform: scale(1.02);
+    transition: transform 0.2s ease-in-out; /* Smooth scaling effect */
+}
